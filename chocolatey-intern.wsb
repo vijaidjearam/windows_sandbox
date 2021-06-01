@@ -1,0 +1,12 @@
+<Configuration>
+    <VGpu>Enable</VGpu>
+    <Networking>Enable</Networking>
+    <MappedFolders>
+    </MappedFolders>
+    <LogonCommand>
+    <Command>C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -executionpolicy unrestricted -command "start powershell {-noexit iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')); choco source add -n='chocosia' -s='http://choco.local.iut-troyes.univ-reims.fr/repository/chocolatey-group/'; choco source remove -n=chocolatey}"</Command>
+    </LogonCommand>
+</Configuration>
+
+
+
