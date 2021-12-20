@@ -1,0 +1,9 @@
+<Configuration>
+    <VGpu>Enable</VGpu>
+    <Networking>Enable</Networking>
+    <MappedFolders>
+    </MappedFolders>
+    <LogonCommand>
+    <Command>C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe -executionpolicy unrestricted -command "start powershell {-noexit iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')); Invoke-WebRequest -Uri 'https://github.com/Shabinder/SpotiFlyer/releases/download/v3.5.0/SpotiFlyer-3.5.0.msi' -Outfile .\Spotiflyer.msi; Start-Process msiexec.exe -Wait -ArgumentList '/I Spotiflyer.msi /quiet'; choco install -y javaruntime ffmpeg}"</Command>
+    </LogonCommand>
+</Configuration>
